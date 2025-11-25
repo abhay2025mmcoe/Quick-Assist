@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body class="e">
+            <a href="index.html"  class="homee">Home</a>
+    <div class="form-container">
+        <h2>Register</h2>
+        <form id="registerForm">
+            <input type="text" name="name" placeholder="Full Name" required />
+            <input type="email" name="email" placeholder="Email" required />
+            <input type="password" name="password" placeholder="Password" required />
+            <select name="role" required>
+                <option value="">Select Role</option>
+                <option value="user">User</option>
+                <option value="provider">Service Provider</option>
+            </select>
+            <button type="submit">Register</button>
+        </form>
+        <p>Already have an account? <a href="login.html">Login</a></p>
+    </div>
+
+    <script>
+        document.getElementById('registerForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const form = e.target;
+            const data = {
+                name: form.name.value,
+                email: form.email.value,
+                password: form.password.value,
+                role: form.role.value
+            };
+
+            const res = await fetch('http://localhost:5000/register', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(data)
+            });
+
+            const result = await res.json();
+            if (res.ok) {
+                if (result.role === 'provider') {
+                    window.location.href = 'provider-dashboard.html';
+                } else {
+                    window.location.href = 'homepage.html';
+                }
+            } else {
+                alert(result.error || 'Registration failed');
+            }
+        });
+    </script>
+</body>
+
+</html>

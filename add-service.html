@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add New Service</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <div class="form-container">
+        <h2>Add Your Service</h2>
+        <form id="serviceForm">
+            <input type="text" name="name" placeholder="Business Name" required />
+            <input type="text" name="serviceType" placeholder="Service Type (e.g., barber, PG)" required />
+            <input type="text" name="contact" placeholder="Contact Number" required />
+            <input type="email" name="email" placeholder="Business Email" required />
+            <input type="text" name="location" placeholder="Location (e.g., Nagpur)" required />
+            <textarea name="description" placeholder="Description" rows="4" required></textarea>
+            <button type="submit">Submit Service</button>
+        </form>
+        <p><a href="provider-dashboard.html">Back to Dashboard</a></p>
+    </div>
+
+    <script>
+        document.getElementById('serviceForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const form = e.target;
+            const data = {
+                name: form.name.value,
+                serviceType: form.serviceType.value,
+                contact: form.contact.value,
+                email: form.email.value,
+                location: form.location.value,
+                description: form.description.value
+            };
+
+            const res = await fetch('http://localhost:5000/add-service', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(data)
+            });
+
+            const result = await res.json();
+            if (res.ok) {
+                alert(result.message);
+                window.location.href = 'provider-dashboard.html';
+            } else {
+                alert(result.error || 'Failed to add service');
+            }
+        });
+    </script>
+</body>
+
+</html>

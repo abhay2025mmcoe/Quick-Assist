@@ -1,0 +1,266 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.e{
+      background-image: url("https://static2.bigstockphoto.com/0/6/1/large1500/160449857.jpg");
+      background-size: 1400px 700px;   
+    background-repeat: no-repeat;
+    }
+.w{  
+     
+     background-image: url("https://img.freepik.com/premium-photo/back-view-human-hand-hold-trimmer-make-hairstyle-man-barbershop_152637-8783.jpg?w=2000");
+      background-size: 1400px 700px;   
+    background-repeat: no-repeat;
+
+
+    }
+    
+body {
+    
+/* background-image: url("https://tse3.mm.bing.net/th/id/OIP.tO440XlvbpfqDyuQGiqIiQHaEK?cb=ucfimg2ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3"); */
+    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: whitesmoke;
+    color: #0a0a0a;
+    line-height: 1.6;
+}
+.qutoes{
+padding-top: 30px;
+padding-left: 40px;
+}
+.q1{
+    padding-left: 3px;
+    box-shadow: 10px 10px 15px 5px rgba(125, 187, 189, 0.5);
+    text-shadow: 2px 2px 5px rgb(37, 103, 224);
+}
+.q2{
+    font-size: xxx-large;
+ box-shadow: 10px 10px 15px 5px rgba(85, 175, 163, 0.5); 
+
+text-shadow: 2px 2px 5px rgb(130, 212, 218);
+
+
+}
+
+
+
+header {
+    
+    background-image: url("https://static.vecteezy.com/system/resources/previews/001/409/192/original/abstract-geometric-banner-free-vector.jpg");
+    color: rgb(6, 11, 82);
+    padding: 0.3rem 0.2rem;
+    padding-right: 2rem;
+    display: flex;
+     
+     justify-content: space-between;
+    align-items: center; 
+    }
+header h1 {
+    
+    font-size: 2.5rem;
+}
+
+nav a {
+    color: rgb(6, 17, 6);
+    margin-left: 1.5rem;
+    text-decoration: none;
+    font-weight:bolder;
+    font-size: 1.2rem;
+}
+
+nav a:hover {
+     color: rgb(160, 17, 17); 
+
+}
+
+
+main {
+    padding: 2rem;
+}
+
+
+.hero {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.hero h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.hero input {
+    padding: 0.5rem;
+    width: 70%;
+    max-width: 400px;
+    margin-top: 1rem;
+    border: 2px solid #c08787;
+    border-radius: 4px;
+}
+
+.hero button {
+    padding: 0.5rem 1rem;
+    margin-left: 0.5rem;
+    background-color: #88a6dd;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.hero button:hover {
+    background-color: #072c46;
+}
+
+
+.info {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.info h3 {
+    font-size: 1.5rem;
+}
+
+.info p {
+    margin-top: 0.5rem;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.btn:hover {
+    background-color: #0e4419;
+}
+
+footer {
+
+    background-color:black;
+
+    color: white;
+    align-items: center;
+    
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+
+
+.form-container {
+    top: 0;
+    left: 0;
+    right: 0;
+    font-size: large;
+    color: #171718;
+    max-width: 400px;
+    margin: 3rem auto;
+    background-color: rgba(235, 235, 235, 0.644);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 100px 100px 100px 100px rgba(41, 16, 16, 0.1);
+    
+}
+
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.form-container input,
+.form-container select,
+.form-container textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #251f1f;
+    border-radius: 4px;
+}
+
+.form-container button {
+    width: 100%;
+    padding: 0.5rem;
+    background-color: #052a44;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form-container button:hover {
+    background-color: #005fa3;
+}
+
+.form-container p {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+
+.service-card {
+    background-color: rgb(235, 223, 223);
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 6px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.service-card h3 {
+    margin-bottom: 0.5rem;
+}
+
+.service-card p {
+    margin: 0.25rem 0;
+}
+.o{
+    background-image: url("https://as2.ftcdn.net/v2/jpg/03/47/89/45/1000_F_347894550_3j72zA9SY3TfuF2UlzcPXic5BYLctZin.jpg");
+      background-size: 1400px 700px;   
+    background-repeat: no-repeat;
+color: #181616;
+    padding-left: 50px;
+}
+.about-us{
+    background-color: #ffffff31;
+}
+.p{
+ 
+    background-image: url("https://img.freepik.com/premium-photo/concept-support-service-internet-business-technology_220873-12811.jpg");
+ background-size: 1400px 700px;   
+    background-repeat: no-repeat;
+    font-size: larger;
+}
+.contact-us{
+    padding-left: 30px;
+    padding-top: 50px;
+    background-color: #e9a85e2d;
+    font-size: larger;
+}
+
+.homee{
+    text-decoration: none;
+    padding-right: 0px;
+    padding-left: 1200px;
+    color: #0a0add;
+    font-size: x-large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: #0e8feb;
+    box-shadow: red;
+    color: rgb(241, 100, 6);
+    margin-left: 1.5rem;
+    text-decoration: none;
+    font-weight:bolder;
+    font-size: 1.2rem;
+}
+.homee:hover{
+    color: rgb(57, 195, 236);
+    font-style: oblique;
+}
