@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="fake.css">
+</head>
+<body>
+    
+    <header>
+        <img class="logo" src="Screenshot 2025-11-01 170617.png" alt="Logo" width="150" height="95">
+        <h1>Quick Assist</h1>
+        <nav> 
+            
+             <a href="index.html">Home</a>
+              <a href="aboutus.html">About us</a>
+               <a href="contactus.html" >contact us</a>
+            <a href="login.html">Login</a>
+            <a href="registration.html">Register</a>
+            
+        </nav>
+    </header>
+<div class="qutoes">
+        <p class="q1"> All in one: All for you</p>
+        <h1 class="q2">"One Stop <br> Endless Services"</h1>
+            </div>
+            <p  class="a" style="font-size:50px; color:black; ">⬇️</p>
+
+    
+        <section class="hero">
+            
+            <h2><br><br>Find Services Near You !!! </h2>
+            <div class="col">
+                            <input type="text" id="search" placeholder="Search for barber, PG, clinic......" style="text-transform: lowercase;" />
+            <button onclick="searchServices()">.search</button>
+            </div>
+        </section>
+
+        <section class="info">
+            <h3><br><br>Are you a Service Provider?</h3>
+            <p>Register your business and reach more customers.</p>
+            <a href="index.html" class="btn">Register as Provider</a><br><br><br><br><br><br><br>
+        </section>
+    
+    </main>
+    <!-- <img class="logo" src="Screenshot 2025-11-01 175251.png" alt="Logo" width="1340" height="400"> -->
+    <main>
+
+    <footer >
+        <div class="faltu" > 
+Company
+
+ <br>
+..Investor Relations 
+Terms & conditions 
+Privacy policy 
+Anti-discrimination policy 
+ESG Impact 
+Careers <br>
+For customers
+
+UC reviews 
+Categories near you <br>
+Contact us 
+For professionals<br>
+
+Register as a professional 
+Social links
+<br>
+
+
+
+<br><br>
+* As on nov 28, 2025 <br><br>
+
+© Copyright 2025 QuickAssist  Limited (formerly known as  Technologies India Limited and Technologies India India Limited) All rights reserved. | CIN: L74140DL2014PLC274413
+
+
+<br><br>
+</div>
+
+    </footer>
+
+    <script>
+        function searchServices() {
+            const query = document.getElementById('search').value;
+            window.location.href = `services.html?type=${encodeURIComponent(query)}`;
+        }
+    </script>
+</body>
+
+</html>
+</body>
+</html>
